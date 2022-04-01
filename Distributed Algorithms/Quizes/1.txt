@@ -1,0 +1,33 @@
+Quiz 1:
+
+1.Assuming NCP-s never crash, Two-Msg. Conversation can avoid: 
+A. neither
+B. both duplicates and losses
+C. losses
+D. duplicates
+
+2.Assuming NCP-s never crash, Three-Msg. Conversation can never avoid:
+A. loss of <ack>
+B. loss of <close>
+C. duplication
+D. There are no problems to be avoided.
+
+3.A state in which a process has finished its computation and will not restart any action unless it receives a message is called as 
+A. Partially terminated state
+B. Locally terminated state // explanation: because we talk about Local algorithms
+C. Globally terminated state
+D. Terminating state
+
+4.If a process can send a message only when the destination of the message is ready to accept it, then we refer to:
+A. Synchronous message passing
+B. Asynchronous message passing
+C. One-Message Conversation
+D. Two-Message Conversation
+
+5.Under __ no action can be enabled inﬁnitely often without being executed.
+A. safety requirement
+B. liveness requirement
+C. strong fairness
+D. invariant
+
+Quiz 1 answers: D, B, B, A, C

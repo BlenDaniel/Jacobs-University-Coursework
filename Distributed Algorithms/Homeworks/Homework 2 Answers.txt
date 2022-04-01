@@ -1,0 +1,12 @@
+1)
+-- I checked that you wrote it well, so I am not going to write all of them down.
+2) 
+Those are sample adv./disadv., might be other as well:
+->ring: N - Simple Topology, i.e. without many connections - Might take a long time for nodes in the opposite sides to communicate
+->tree: N-1 - Simple Topology and key positions can communicate quite fast with all nodes - Some nodes might be connected with a lot of nodes and overflow it
+->star: N-1 - Center node can communicate with all others - It might cause problems if all want to communicate same time
+->clique: N(N-1)/2 - Every node can communicate directly to every node - Complicated topology and hard to achieve
+->hypercube: 2^N - There is a maximum distance which is n − 1 and is a relation of log(N) so quite fast - Need only powers of two for such a topology (expensive)
+3)
+Observe that, assumption F1 ensures that a packet is retransmitted over and over again if an acknowledgement is never received; F2 excludes computations where the retransmission is never received.
+Assume a configuration where packets s_p and s_p + 1 are sent by q, but q starts to send packet s_p + 1 infinitely often (and the packet is received infinitely often). This violates F1 because packet s_p remains sendable forever, but F2 is satisfied, and no progress is made.

@@ -1,0 +1,25 @@
+1. Why is the Chang Robert's Algorithm not an improvement over Lelann's algorithm when worst case message complexity is considered?
+a. Because comparisons to remove tokens adds to the message complexity of the algorithm.
+b. Because the algorithm terminates in the leader which then floods messages to inform of leader identity and adds to message complexity.
+c. Because at most N different tokens are used, and each token is forwarded by at most N hops which results in a O(N^2) bound on the message complexity.
+d. Because Chang Robert's Algorithm solves a different class of problem of election on arbitrary topologies.
+
+2. A lower bound on the complexity of decentralized wave algorithms for rings is obtained as a corollary from:  
+a. the fact that election algorithms can elect a leader without needing to reach a terminal configuration,
+b. the fact that an election is possible in a centralized wave algorithm within multiple executions,
+c. the Peterson/Dolev-Klawe-Rodeh Algorithm which optimizes elections in rings for bidirectional topologies,
+d. the fact that within a single execution of a decentralized wave algorithm, an election can be held,
+
+3. An inconsistent snapshot is the following:
+a. A snapshot captures a message that was sent and received but not acknowledged,
+b. A snapshot that ignores a message that is sent right before it is taken,
+c. A message sent is captured on a snapshot that was never received by the intended receiving process,
+d. A snapshot which does not capture the entire global state of a process
+
+4. The following configurations could be regarded as a explicit termination:
+a. all processes are aware of the leader after an election algorithm but there are still messages in transit,
+b. leader is aware of the result of the election algorithm and all other processes are in the lost state,
+c. only the leader is aware of the result of an election algorithm, but all others are still in a state that accepts messages,
+d. all processes are unaware of the termination of the computation, but the computation has terminated.
+
+answer key = c, d, c, b

@@ -1,0 +1,10 @@
+1)
+As the algorithm counts the number of messages received, a duplicated message may corrupt the count and cause a process to decide or send to its father too early. This can be remedied by administrating the received messages in a bit-array rather than in a count; when receiving form neighbor q, rec_p[q] is set to true. Sending to the father or deciding occurs when all bits are true.
+2)
+Take for example 6 as a starting node. I attached the solution.
+3)
+I never had the time to complete it. I just wanted to test it myself, so I started rather manually. You would not need this task but it is certainly interesting. I attached it as .zip.
+4)
+a) This is the number of Hamiltonian cycles on the n-dimensional hypercube - Q_n grows superexponentially. 
+b) n-dimensional hypercube, can be described as n coordinates => enumerate each coordinate and decide on which coordinate to move first, second and so on.
+c) Z-Order traversal might work: https://www.research-collection.ethz.ch/handle/20.500.11850/123617
