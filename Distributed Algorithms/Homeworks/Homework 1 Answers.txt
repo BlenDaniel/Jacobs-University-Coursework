@@ -1,9 +1,0 @@
-1)
-For instance, a send that blocks till the receiver machine has received the message is blocking but not synchronous since the receiver process may not have received it.
-https://www.cs.unc.edu/~dewan/242/s07/notes/ipc/node9.html
-2)
-Consider the system S = ({γ, δ}, {(γ → δ)}, ∅), and define P to be true in γ but false in δ. As there are no initial configurations, this system has no computations, hence trivially P is always true in S. On the other hand, P is falsified in the only transition of the system, so P is not invariant.
-The difference between invariant and always true is caused by the existence of transitions that falsify a predicate, but are applicable in an unreachable configuration, so that they do not “harm” any computation of the system.
-3)
-http://resources.mpi-inf.mpg.de/d5/triad/mod954-gurajada.pdf -- Dynamic Dependency Graph
-https://www.wikiwand.com/en/Reachability 
