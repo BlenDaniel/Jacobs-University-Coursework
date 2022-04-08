@@ -1,0 +1,28 @@
+Quiz 5
+
+1.The Lai-Yang algorithm:
+A. requires LIFO property since special markers are used to distinguish pre- and post-shot messages
+B. inspects received messages and records the local state as it is before receipt of the first preshot message
+C. generates feasible snapshots only
+D. modifies the messages in transition to determine if they are preshot or postshot
+
+2.A stable property P of configurations occurs:
+A. until an execution reaches a configuration in which P holds
+B. once an execution reaches a configuration in which P temporary holds
+C. when it is not possible for a deadlock to occur in the execution
+D. after an execution reaches a configuration in which P will hold
+
+3.A process while performing election is crashing. Which of the following descriptions is correct with respect to a crash-robust election algorithm?
+A. The terminal configuration fulfills the consistency requirement for decision
+B. Fault-tolerant election algorithms would not be able to detect a fault with this configuration
+C. The other processes  can potentially compromise the system
+D. It is impossible to conduct election under such circumstances
+
+4.An election algorithm has reached a configuration in which a leader is elected but all other processes are not in state "Lost". Which of the following statements is correct?
+A. This displays a configuration where not all processes decided
+B. Since this is a trivial configuration, a re-run of the algorithm should be initiated
+C. A consensus cannot be reached in this network
+D. The configuration satisfies the termination condition
+
+
+1.2, 2.1, 2.2, 4.2, 5.3

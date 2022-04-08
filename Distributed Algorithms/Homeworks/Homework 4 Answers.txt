@@ -1,0 +1,15 @@
+1)
+Reference: http://www.krchowdhary.com/dist-algo/ledrelct.pdf - end of section 2.1 
+1.1) Leader election:
+a) Processes may execute normally as long as a leader remains selected.
+b) Concerned with fast and successful termination of election process.
+c) Result of leader election must be known to all other processes.
+1.2) Mutual exclusion:
+a) Process competes until it succeeds.
+b) Must ensure that no process is starved.
+c) Does not care which process is running in the critical section.
+2)
+Because <wakeup> messages are forwarded immediately by every process, all processes have started the tree algorithm withing D time units from the start of the whole
+algorithm. It remains to show that the time complexity of the tree algorithm, including the flooding of the answer, is D... (there is continuation on this argument, found in the book; it is 3-4 sentences).
+3)
+Worst way to arrange the ids is in decreasing order (and all processes are initiators): 2nd largest causes n − 1 messages, 3rd largest n − 2 messages etc. => number of messages is then n + (n-1) + ... + 1 + n => O(n^2) -- we need the last n for the leader message.

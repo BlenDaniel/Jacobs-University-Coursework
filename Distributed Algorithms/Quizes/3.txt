@@ -1,0 +1,35 @@
+Quiz 3:
+
+1. Upon a successful termination of the traversal algorithm in the initiator, what conclusion can be reached: 
+A. an election leader has been discovered,
+B. the algorithm has traversed at least half of the network topology,
+C. each node has sent at least one message,
+D. a minimum of (N, x+1) processes have been visited.
+
+2. The sequential polling algorithm terminates after having exchanged the following:
+A. N messages since all nodes receive from the initiator,
+B. 2N messages since all nodes receive and send,
+C. 2N-1 messages since all leaf nodes receive and send,
+D. 4N-1 messages since all leaf nodes are polled twice.
+
+3. The metric to determine the time complexity of a distributed algorithm in an execution can be best described as:
+A. the longest message delay within the execution,
+B. the number of nodes within an execution,
+C. the number of stars in the galaxy because everything is a distributed network,
+D. the number of time the weather changes in Bremen within a week.
+
+4. Election Algorithms are intended for the following purpose:
+A. to elect a leader to start the initiation of a decentralized algorithm on a network,
+B. to elect a leader to start the initiation of a centralized algorithm on a network,
+C. to execute multiple algorithms on different parts of the network,
+D. to elect multiple processes as leaders which can then initiate a distributed algorithm.
+
+
+5. The Election Algorithm for Trees has a <wakeup> token. Why?
+A. because all edges of the spanning tree need to be included in a free and fair election,
+B. the tree algorithm is initiated by all leaf nodes thus all leaf nodes must be initiators,
+C. the election algorithm for trees can be applied to any arbitrary topology if <wakeup> is included,
+D. the election algorithm is a centralized algorithm and does not require <wakeup> tokens since this only increases message complexity.
+
+
+Quiz 3 answers: C, B, A, B, B
