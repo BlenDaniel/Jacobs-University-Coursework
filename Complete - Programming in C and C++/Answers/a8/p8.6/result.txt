@@ -1,4 +1,0 @@
-Sum: 636.800000
-Difference: 567.800000
-Product: 20779.350000
-Division: 17.457971

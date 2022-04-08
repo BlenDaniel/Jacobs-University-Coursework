@@ -1,6 +1,0 @@
-The Sum is: 
-87 + 5i
-The difference is: 
--95 + 1i
-The multipliction is: 
--370 + 265i
